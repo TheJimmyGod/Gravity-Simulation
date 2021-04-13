@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="EnemyBullet.cpp" />
+    <ClCompile Include="EnemyBulletManager.cpp" />
+    <ClCompile Include="SpriteAnimations.cpp" />
+    <ClCompile Include="PlayerSkillObject.cpp" />
+    <ClCompile Include="Huds.cpp" />
+    <ClCompile Include="PlayerShadow.cpp" />
+    <ClCompile Include="SecondaryEnemy.cpp" />
+    <ClCompile Include="SecondaryEnemyBullet.cpp" />
+    <ClCompile Include="SecondaryEnemyBulletManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="PlayerCondition.h" />
+    <ClInclude Include="Direction.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyManager.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="EnemyBullet.h" />
+    <ClInclude Include="EnemyBulletManager.h" />
+    <ClInclude Include="SpriteAnimations.h" />
+    <ClInclude Include="PlayerSkillObject.h" />
+    <ClInclude Include="Huds.h" />
+    <ClInclude Include="PlayerShadow.h" />
+    <ClInclude Include="SecondaryEnemy.h" />
+    <ClInclude Include="SecondaryEnemyBullet.h" />
+    <ClInclude Include="SecondaryEnemyBulletManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Layer01.txt" />
+    <Text Include="Layer02.txt" />
+    <Text Include="Layer03.txt" />
+    <Text Include="Texture01.txt" />
+  </ItemGroup>
+</Project>

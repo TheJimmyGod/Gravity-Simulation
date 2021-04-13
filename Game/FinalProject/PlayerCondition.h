@@ -1,0 +1,10 @@
+#ifndef INCLUDED_PLAYER_CONDITION_HEADER
+#define INCLUDED_PLAYER_CONDITION_HEADER
+
+enum class Condition
+{
+	Left,
+	Right
+};
+
+#endif // !INCLUDED_PLAYER_CONDITION_HEADER
