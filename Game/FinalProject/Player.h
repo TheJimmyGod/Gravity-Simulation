@@ -13,16 +13,19 @@ public:
 	void Update(float deltaTime, const Map& map);
 	void Render(const Camera& camera);
 	void Death();
-	void SetPosition(const X::Math::Vector2& position) { mPosition = position; }
+
 	void SetHealth(int health) { mHealth = health; }
 	int GetHealth() { return mHealth; }
-	void SetDamage(int damage) { mHealth -= damage; }
-	void SetDamaged(bool damage) { IsDamage = damage; }
+	void SetDamage(int damage) { mHealth -= damage; IsDamage = true; mDamageTimer = 3.0f; }
 	void SetAttack(bool attack) { IsAttack = attack; }
-	void SetDead(bool dead) { mDeath = dead; }
 	bool IsAttacked() { return IsAttack; }
 	bool IsDead() { return mDeath; }
 	bool IsDamaged() { return IsDamage; }
+	void Clear()
+	{
+		IsAttack = false; IsDamage = false; mDeath = false; mHealth = 3;
+		mPosition = { X::GetScreenWidth()*0.5f, X::GetScreenHeight()*0.5f };
+	}
 
 	void SetCondition(Condition condition) { mCondition = condition; }
 	Condition GetCondition() const { return mCondition; }
@@ -33,8 +36,6 @@ public:
 	X::Math::Rect GetBoundary() const;
 
 	X::Math::Circle GetCircleBoundary() const;
-
-	float GetSpeed() { return mSpeed; }
 private:
 	X::Math::Vector2 mPosition{ 100.0f,320.0f };
 	X::TextureId mTextureId[2]{ 0 };

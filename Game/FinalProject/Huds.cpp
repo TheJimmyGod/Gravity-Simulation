@@ -28,10 +28,12 @@ void Huds::Update(int health, const X::Math::Vector2& target)
 	}
 }
 
-void Huds::GameOver()
+void Huds::GameOver(int score)
 {
 	X::DrawScreenText(mText, X::GetScreenWidth()*0.3f, X::GetScreenHeight()*0.4f, 100.0f, X::Math::Vector4::Yellow());
-	X::DrawScreenText("Press Space to continue", X::GetScreenWidth()*0.3f, X::GetScreenHeight()*0.6f, 50.0f, X::Math::Vector4::LightGreen());
+	std::string str = std::to_string(score);
+	X::DrawScreenText(str.c_str(), X::GetScreenWidth()*0.7f, X::GetScreenHeight()*0.45f, 50.0f, X::Math::Vector4::Green());
+	X::DrawScreenText("Press Space to continue", X::GetScreenWidth()*0.25f, X::GetScreenHeight()*0.6f, 50.0f, X::Math::Vector4::LightGreen());
 }
 
 void Huds::load()

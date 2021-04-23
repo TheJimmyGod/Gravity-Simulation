@@ -33,7 +33,7 @@ void Font::Initialize()
 {
 	ID3D11Device* device = GraphicsSystem::Get()->GetDevice();
 	FW1CreateFactory(FW1_VERSION, &mFW1Factory);
-	mFW1Factory->CreateFontWrapper(device, L"Consolas", &mFontWrapper);
+	mFW1Factory->CreateFontWrapper(device, L"Kristen ITC", &mFontWrapper);
 }
 
 //----------------------------------------------------------------------------------------------------

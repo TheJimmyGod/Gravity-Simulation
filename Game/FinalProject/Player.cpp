@@ -74,11 +74,12 @@ void Player::Update(float deltaTime, const Map & map)
 		}
 	}
 
-	if (mDamageTimer < X::GetTime())
+	if (mDamageTimer > 0.0f)
 	{
-		SetDamaged(false);
-		mDamageTimer += 2.0f;
+		mDamageTimer -= deltaTime;
 	}
+	else
+		IsDamage = false;
 	
 	// Check collision and adjust displacement if needed
 	auto boundary = GetBoundary();

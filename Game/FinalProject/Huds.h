@@ -6,7 +6,7 @@ class Huds
 {
 public:
 	void Update(int health, const X::Math::Vector2& target);
-	void GameOver();
+	void GameOver(int score);
 	void load();
 	void Render(const Camera& camera);
 	void Unload();

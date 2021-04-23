@@ -30,7 +30,7 @@ void Camera::Draw(X::TextureId textureId, const X::Math::Vector2 & worldPosition
 	}
 }
 
-void Camera::Write(const char * score, const X::Math::Vector2 & worldPosition) const
+void Camera::Write(const char * score, const X::Math::Vector2 & worldPosition, float size, X::Math::Vector4 color) const
 {
 	auto screenPosition = ConvertToScreenPosition(worldPosition);
 	if ((screenPosition.y > 0.0f)
@@ -38,7 +38,7 @@ void Camera::Write(const char * score, const X::Math::Vector2 & worldPosition) c
 		|| (screenPosition.x > worldPosition.x)
 		|| (screenPosition.y > worldPosition.y))
 	{
-		X::DrawScreenText(score, screenPosition.x, screenPosition.y, 30.0f, X::Math::Vector4::LightGreen());
+		X::DrawScreenText(score, screenPosition.x, screenPosition.y, size, color);
 	}
 	else
 	{
