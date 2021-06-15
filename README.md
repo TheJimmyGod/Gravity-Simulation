@@ -3,11 +3,11 @@
 ![Screenshot](https://github.com/TheJimmyGod/Gravity-Simulation/blob/JimmyGod/Game/Documents/Gravity_Simulation.png)
 
 ### Contents
-1. Introduction
-2. How to play
-3. Features
-4. Gameplay Showcases
-5. Acknowledgement
+1. [Introduction](https://github.com/TheJimmyGod/Gravity-Simulation#introduction)
+2. [How to play](https://github.com/TheJimmyGod/Gravity-Simulation#how-to-play)
+3. [Features](https://github.com/TheJimmyGod/Gravity-Simulation#features)
+4. [Gameplay Showcases](https://github.com/TheJimmyGod/Gravity-Simulation#gameplay-showcases)
+5. [Acknowledgement](https://github.com/TheJimmyGod/Gravity-Simulation#acknowledgement)
 
 ---
 
