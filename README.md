@@ -29,7 +29,7 @@ The player should avoid from fatal weapons, and take the highest score until the
 ### Features
 - Programmed ```singleton design pettern``` to create a single ownership to summon a lot of projectiles or units
 - Implemented ```unit``` that has a trigger when it collides to the wall
-- Implemented ```Map System``` supports to transfer different map textures every time
+- Implemented ```Map System``` supports to transfer different level designs
 - Implemented ```Camera System``` supports to follow the player position
 - Implemented ```Barrier Shell``` supports to the player gets protected by projectiles
 - Implemented ```Shadow motions``` supports to create shadow following the player
