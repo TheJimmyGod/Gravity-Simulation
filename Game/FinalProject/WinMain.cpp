@@ -61,7 +61,7 @@ void GameInit()
 	EnemyManager::StaticInitialize();
 	EnemyBulletsManager::StaticInitialize();
 	SecondaryEnemyBulletManager::StaticInitialize();
-	bgTextureId = X::LoadTexture("BackGround.jpg");
+	bgTextureId = X::LoadTexture("Gravity_Simulation_Complete.png");
 	PlayerHitInfo.fileName = "Spark.png";
 	PlayerHitInfo.rows = 5;
 	PlayerHitInfo.columns = 5;
@@ -98,7 +98,10 @@ bool GameLoop(float deltaTime)
 	string s = std::to_string(mScore);
 	mHud.Start(mStart);
 	if (X::IsKeyDown(X::Keys::SPACE))
+	{
+		bgTextureId = X::LoadTexture("Back.jpg");
 		mStart = true;
+	}
 
 	if (mStart)
 	{
